@@ -11,7 +11,7 @@ def extract_frames_from_gif(gif_path, output_folder="frames"):
         frame = 0
         while True:
             # 保存当前帧为 PNG
-            frame_path = os.path.join(output_folder,"gif14", f"frame_{frame:03d}.png")
+            frame_path = os.path.join(output_folder,"gif15", f"frame_{frame:03d}.png")
             gif.save(frame_path, format="PNG")
             frame += 1
 
@@ -25,5 +25,5 @@ def extract_frames_from_gif(gif_path, output_folder="frames"):
 
 # ========== 主程序 ==========
 if __name__ == "__main__":
-    gif_path = "14.gif"  # 替换为你的 GIF 路径
+    gif_path = "15.gif"  # 替换为你的 GIF 路径
     extract_frames_from_gif(gif_path)
